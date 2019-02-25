@@ -1,0 +1,6 @@
+{
+    "require": {
+        "google/protobuf": "v3.6.1.3",
+        "spiral/roadrunner": "^1.3"
+    }
+}
