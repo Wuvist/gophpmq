@@ -29,7 +29,7 @@ func main() {
 	r := kafka.NewReader(kafka.ReaderConfig{
 		Brokers:  []string{"localhost:9092"},
 		GroupID:  "test",
-		Topic:    "foobar",
+		Topic:    "msg",
 		MinBytes: 10e3, // 10KB
 		MaxBytes: 10e6, // 10MB
 	})

@@ -16,3 +16,9 @@ composer require spiral/roadrunner
 go get github.com/spiral/roadrunner
 go get -u github.com/golang/protobuf/protoc-gen-go
 ```
+
+## notes
+
+```bash
+panic: [5] Leader Not Available: the cluster is in the middle of a leadership election and there is currently no leader for this partition and hence it is unavailable for writes
+```

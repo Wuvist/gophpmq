@@ -18,7 +18,7 @@ func main() {
 	})
 
 	m := &msg.Msg{}
-	m.Msg = "hello"
+	m.Msg = "welcome"
 	m.Version = 2019
 
 	data, err := proto.Marshal(m)
