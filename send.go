@@ -3,7 +3,8 @@ package main
 import (
 	"context"
 	"log"
-	"test/msg"
+
+	"github.com/Wuvist/gophpmq/msg"
 
 	"github.com/golang/protobuf/proto"
 	kafka "github.com/segmentio/kafka-go"

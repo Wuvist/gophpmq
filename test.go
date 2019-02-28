@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"test/msg"
 	"time"
+
+	"github.com/Wuvist/gophpmq/msg"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/spiral/roadrunner"
