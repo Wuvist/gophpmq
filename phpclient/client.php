@@ -18,7 +18,7 @@ while ($body = $rr->receive($context)) {
     	$msg = new msg();
     	$msg->mergeFromString($body);
 
-        $rr->send($msg->getMsg().$msg->getVersion(), (string)$context);
+        $rr->send($msg->getMsg().$msg->getVersion().(string)$context, (string)$context);
     } catch (\Throwable $e) {
         $rr->error((string)$e);
     }

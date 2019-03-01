@@ -34,9 +34,12 @@ func main() {
 		panic(err)
 	}
 
-	res, err := srv.Exec(&roadrunner.Payload{Body: data})
+	p := &roadrunner.Payload{Body: data, Context: []byte("bingo")}
+
+	res, err := srv.Exec(p)
 	if err != nil {
 		panic(err)
 	}
 	fmt.Println(string(res.Body))
+	fmt.Println(string(res.Context))
 }

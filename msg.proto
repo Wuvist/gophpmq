@@ -1,8 +1,16 @@
 syntax = "proto3";
 
+import "protomq.proto";
+
 // option go_package = "main";
 
-message msg {
-  string msg = 1;
-  int32 version = 2;
+message JsonQueue {
+	option (protomq.topic) = "foobar";
+	string data = 1;
+}
+
+message TypedQueue {
+	option (protomq.topic) = "foobar";
+	string msg = 1;
+	int32 version = 2;
 }

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "google/protobuf/descriptor.proto";
+
+package protomq;
+
+extend google.protobuf.ServiceOptions {
+  string topic = 55008;
+}

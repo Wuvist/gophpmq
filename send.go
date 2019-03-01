@@ -29,7 +29,6 @@ func main() {
 
 	err = w.WriteMessages(context.Background(),
 		kafka.Message{
-			Key:   []byte("Key-A"),
 			Value: data,
 		},
 	)
