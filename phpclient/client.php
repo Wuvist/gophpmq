@@ -8,7 +8,6 @@ use Spiral\RoadRunner;
 ini_set('display_errors', 'stderr');
 require 'vendor/autoload.php';
 
-include 'GPBMetadata\Msg.php';
 include 'msg.php';
 
 $rr = new RoadRunner\Worker(new Spiral\Goridge\StreamRelay(STDIN, STDOUT));
